@@ -22,6 +22,11 @@ void getString(char *str, char find, char replace)
     {
         ft_putchar('\n');
     }
+    else
+    {
+	    ft_putchar(str[i]);
+	    ft_putchar('\n');
+    }
 }
 
 int main(int argc, char **argv) {
@@ -35,7 +40,7 @@ int main(int argc, char **argv) {
         else
         {
             ft_putchar('\n');
-            return 0;
+            return 1;
         }
         char replace = argv[3][0];
         getString(str, find, replace);
